@@ -1,7 +1,3 @@
-"""Configuración compartida entre entrenamiento y API (una sola fuente de verdad)."""
-
-# Orden EXACTO de las columnas que usa el modelo clínico.
-# clinical_data.csv debe tener estas columnas + la columna objetivo.
 FEATURES = [
     "edad",
     "sexo",                 # 0: Femenino, 1: Masculino
@@ -12,9 +8,8 @@ FEATURES = [
     "saturacion_o2",        # %
     "sintoma_severidad",    # 0: Leve, 1: Moderado, 2: Severo
 ]
-TARGET = "riesgo"  # 0: Estable, 1: Riesgo/Grave (definido por el médico/triaje final = gold standard)
+TARGET = "riesgo"
 
-# Rangos fisiológicos plausibles: sirven para limpiar el dataset y validar la API.
 RANGOS = {
     "edad": (0, 120),
     "temperatura": (30, 45),
