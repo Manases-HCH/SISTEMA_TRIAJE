@@ -1,14 +1,10 @@
-# Entorno virtual
 venv/
 .venv/
 env/
-
-# Archivos compilados de Python
 __pycache__/
 *.py[cod]
-
-# Modelos pesados (opcional si superan los 100 MB)
-# *.h5
-
-# Archivos de VS Code
 .vscode/
+# Datos de pacientes: NUNCA al repositorio (Ley 29733)
+DATASET/*.csv
+models_demo/
+# *.h5   # descomenta si supera 100 MB

@@ -1,0 +1,12 @@
+body { font-family: system-ui, sans-serif; background: #f4f6f8; margin: 0; padding: 24px; }
+.container { max-width: 480px; margin: auto; background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px #0001; }
+label { display: block; margin: 12px 0; font-size: 14px; }
+input, select { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+button { width: 100%; padding: 12px; margin-top: 12px; background: #0b5ed7; color: #fff; border: 0; border-radius: 8px; font-size: 16px; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+.card-resultado { margin-top: 20px; padding: 16px; border-radius: 8px; border-left: 6px solid #999; background: #f0f0f0; }
+.card-resultado.estable { border-color: #2e9e5b; background: #eaf7ef; }
+.card-resultado.moderado { border-color: #e0a800; background: #fff7e0; }
+.card-resultado.grave { border-color: #d63030; background: #fdeaea; }
+.error { color: #b02020; margin-top: 12px; }
+.banner { background: #fff3cd; padding: 8px; border-radius: 6px; font-size: 13px; }
