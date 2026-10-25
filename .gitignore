@@ -4,7 +4,7 @@ env/
 __pycache__/
 *.py[cod]
 .vscode/
-# Datos de pacientes: NUNCA al repositorio (Ley 29733)
 DATASET/*.csv
 models_demo/
-# *.h5   # descomenta si supera 100 MB
+*.h5
+DATASET/images/

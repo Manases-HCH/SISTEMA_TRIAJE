@@ -1,5 +1,5 @@
-modelo,val_precision,val_recall,val_f1,val_roc_auc,test_precision,test_recall,test_f1,test_roc_auc
-Regresión Logística,0.7407,0.7407,0.7407,0.6809,0.7273,0.7273,0.7273,0.6758
-SVM,0.6585,1.0,0.7941,0.6463,0.6548,1.0,0.7914,0.6109
-Random Forest,0.661,0.7222,0.6903,0.5883,0.7377,0.8182,0.7759,0.6867
-XGBoost,0.629,0.7222,0.6724,0.5265,0.7188,0.8364,0.7731,0.6655
+modelo,val_auc,val_precision,val_recall,val_f1,test_precision,test_recall,test_f1,test_roc_auc
+XGBoost,0.7583,0.705,0.7979,0.7486,0.6584,0.726,0.6906,0.6879
+Random Forest,0.7493,0.7435,0.6849,0.713,0.728,0.6233,0.6716,0.7021
+SVM,0.744,0.7212,0.762,0.741,0.6887,0.7123,0.7003,0.7059
+Regresión Logística,0.663,0.6976,0.6045,0.6477,0.699,0.4932,0.5783,0.6277

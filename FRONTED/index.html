@@ -20,19 +20,23 @@
             </label>
             <label>Temperatura (°C): <input type="number" step="0.1" min="30" max="45" id="temperatura" required></label>
             <label>Frecuencia Cardíaca (lpm): <input type="number" min="20" max="250" id="fc" required></label>
+            <label>Frecuencia Respiratoria (rpm): <input type="number" min="4" max="80" id="fr" required></label>
             <label>Presión Sistólica (mmHg): <input type="number" min="40" max="300" id="pas" required></label>
             <label>Presión Diastólica (mmHg): <input type="number" min="20" max="200" id="pad" required></label>
             <label>Saturación de O₂ (%): <input type="number" min="50" max="100" id="spo2" required></label>
-            <label>Severidad del Síntoma:
-                <select id="sintoma">
-                    <option value="0">Leve</option>
-                    <option value="1">Moderado</option>
-                    <option value="2">Severo (Dolor de pecho, disnea)</option>
+            <label>Estado de conciencia:
+                <select id="mental">
+                    <option value="0">Alerta</option>
+                    <option value="1">Responde a la voz</option>
+                    <option value="2">Responde solo al dolor</option>
+                    <option value="3">Inconsciente</option>
                 </select>
             </label>
-            <label>Foto de Referencia (opcional):
+            <label>Dolor (0 = ninguno, 10 = máximo): <input type="number" min="0" max="10" id="dolor" value="0" required></label>
+            <label><span id="fotoLabel">Foto de referencia (opcional):</span>
                 <input type="file" id="foto" accept="image/*">
             </label>
+            <img id="fotoPrev" class="preview" alt="Vista previa" hidden>
             <button type="submit" id="btnEnviar">Calcular riesgo</button>
         </form>
 
